@@ -1,5 +1,7 @@
 # The amazing cookie clicker
 
+### [Live demo](https://cranky-raman-d1ec70.netlify.com/)
+
 ## Design choices
 
 ### Styling - `styled-components`
