@@ -75,7 +75,7 @@ class App extends Component {
       <Media>
         {({ breakpoints, currentBreakpoint }) => (
           <Container large={breakpoints[currentBreakpoint] > breakpoints.tablet}>
-            <h1>{spaceSeparate(Math.floor(cookies))</h1>
+            <h1>{spaceSeparate(Math.floor(cookies))}</h1>
             <CookieContainer onCookieClick={this.handleCookieClick} />
             <ProducerContainer producers={producers} cookies={cookies} onAddProducer={this.handleAddProducer} />
           </Container>
