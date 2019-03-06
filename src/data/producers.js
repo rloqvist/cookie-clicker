@@ -6,6 +6,8 @@ import bank from '../icons/piggy-bank.svg';
 import temple from '../icons/byzantin-temple.svg';
 import wizard from '../icons/spell-book.svg';
 import portal from '../icons/star-gate.svg';
+import timemachine from '../icons/time-bomb.svg';
+import antimatter from '../icons/fission.svg';
 
 export const producers = [
   {
@@ -49,5 +51,17 @@ export const producers = [
     cost: 150000,
     src: portal,
     cps: 2000,
+  },
+  {
+    name: 'time machine',
+    cost: 3000000,
+    src: timemachine,
+    cps: 15000,
+  },
+  {
+    name: 'antimatter',
+    cost: 50000000,
+    src: antimatter,
+    cps: 70000,
   },
 ]
