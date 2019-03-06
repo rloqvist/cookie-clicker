@@ -2,6 +2,7 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 
 import {producers} from '../data/producers';
+import {spaceSeparate} from '../utils'
 
 const StyledProducer = styled.div`
   display: flex;
@@ -52,10 +53,10 @@ const Producer = ({name, cost, src, cps, active, count, index, onAddProducer}) =
         <StyledProducerIcon src={src} />
         <StyledProducerName>{name}</StyledProducerName>
         <StyledProducerDetails>
-          <div>cost {cost} cookies</div>
-          <div>{cps} cookies / s</div>
+          <div>cost {spaceSeparate(cost)} cookies</div>
+          <div>{spaceSeparate(cps)} cookies / s</div>
         </StyledProducerDetails>
-        <StyledProducerCount>{count}</StyledProducerCount>
+        <StyledProducerCount>{spaceSeparate(count)}</StyledProducerCount>
     </StyledProducer>
   )
 }
