@@ -9,7 +9,7 @@ initializeApp({
 });
 
 const db = firestore();
-const users = db.collection("users")
+const users = db.collection("users");
 const secret = "cookie-clicker";
 
 class Storage extends SimpleCrypto {
@@ -32,7 +32,7 @@ class Storage extends SimpleCrypto {
         cookies: 0,
       })
     }
-    window.localStorage.data = this.encrypt(data)
+    window.localStorage.data = this.encrypt(data);
   }
 
   getItem = key => {
@@ -44,7 +44,7 @@ class Storage extends SimpleCrypto {
     let data = this.decrypt(window.localStorage.data, true);
     data[key] = item;
     window.localStorage.data = this.encrypt(data);
-    return true
+    return true;
   }
 
   broadcast = async () => {

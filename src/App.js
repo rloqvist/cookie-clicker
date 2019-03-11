@@ -30,7 +30,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    this.productionLoop()
+    this.productionLoop();
     this.highScoreSubscription();
   }
 
@@ -39,7 +39,7 @@ class App extends Component {
 
     this.setState({
       highscore,
-    })
+    });
 
     setTimeout(this.highScoreSubscription, 2000);
   }
