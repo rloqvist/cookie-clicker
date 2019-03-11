@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
 
-body {
+body, input {
   font-family: 'Major Mono Display', monospace;
 }
