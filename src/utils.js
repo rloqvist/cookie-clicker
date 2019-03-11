@@ -1,14 +1,14 @@
 import SimpleCrypto from "simple-crypto-js";
 import shortid from 'shortid';
-import {auth, firestore, initializeApp} from 'firebase/firebase';
+import firebase from 'firebase'
 
-initializeApp({
+firebase.initializeApp({
   apiKey: 'AAAAfZCxCQc:APA91bHTS1b-C648cFrCLysCdr3V-OgDfdX-DC01-0kYsi-V5RzRog5cMXUPqPGJKGUVAdNuvDPv1fmjUtNbtWsAG52Z5gUl46WfUjqh1oHJQV2RFF_FS2veGoLDbP-twCo1dzpmj4iN',
   authDomain: 'cookie-clicker-af0cd.firebaseapp.com',
   projectId: 'cookie-clicker-af0cd',
 });
 
-const db = firestore();
+const db = firebase.firestore();
 const users = db.collection("users");
 const secret = "cookie-clicker";
 
