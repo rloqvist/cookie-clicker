@@ -4,7 +4,7 @@ import {CookieContainer} from './components/Cookie';
 import {ProducerContainer} from './components/Producer';
 import {Username} from './components/Username';
 import styled, {css} from 'styled-components';
-import {spaceSeparate} from './utils'
+import {Storage, spaceSeparate} from './utils'
 import shortid from 'shortid';
 
 const Container = styled.div`
